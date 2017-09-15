@@ -31,7 +31,7 @@ def list_img_file(directory):
     new_list = []
     for filename in old_list:
         name, fileformat = filename.split(".")
-        if fileformat.lower() == "jpg" or fileformat.lower() == "png" or fileformat.lower() == "gif":
+        if fileformat.lower() == "jpg" or fileformat.lower() == "png" or fileformat.lower() == "gif" or fileformat.lower() == "jpeg":
             new_list.append(filename)
     # print new_list
     return new_list
