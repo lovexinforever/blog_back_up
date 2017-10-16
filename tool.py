@@ -30,6 +30,7 @@ def list_img_file(directory):
     # print old_list
     new_list = []
     for filename in old_list:
+        print(filename);
         name, fileformat = filename.split(".")
         if fileformat.lower() == "jpg" or fileformat.lower() == "png" or fileformat.lower() == "gif" or fileformat.lower() == "jpeg":
             new_list.append(filename)
@@ -127,6 +128,7 @@ def handle_photo():
             list_info[-1]['arr']['text'].append(info)
             list_info[-1]['arr']['type'].append('image')
     list_info.reverse()  # 翻转
+    bubble(list_info.list);
     final_dict = {"list": list_info}
     with open("../../blog/blog_src/source/photos/data.json","w") as fp:
         json.dump(final_dict, fp)
@@ -167,9 +169,22 @@ def git_operation():
     os.system('git commit -m "add photos"')
     os.system('git push origin master')
 
+
+def bubble(bubbleList):
+    listLength = len(bubbleList)
+    while listLength > 0:
+        for i in range(listLength - 1):
+            if(bubbleList[i].arr.year == bubbleList[i+1].arr.year):
+                if bubbleList[i].arr.month > bubbleList[i+1].arr.month:
+                    bubbleList[i] = bubbleList[i] + bubbleList[i+1]
+                    bubbleList[i+1] = bubbleList[i] - bubbleList[i+1]
+                    bubbleList[i] = bubbleList[i] - bubbleList[i+1]
+        listLength -= 1
+    print(bubbleList)
+
 if __name__ == "__main__":
     cut_photo()        # 裁剪图片，裁剪成正方形，去中间部分
-    compress_photo()   # 压缩图片，并保存到mini_photos文件夹下
+    # compress_photo()   # 压缩图片，并保存到mini_photos文件夹下
     git_operation()    # 提交到github仓库
     handle_photo()     # 将文件处理成json格式，存到博客仓库中
    
