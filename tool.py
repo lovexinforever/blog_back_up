@@ -27,7 +27,7 @@ def directory_exists(directory):
 def list_img_file(directory):
     """列出目录下所有文件，并筛选出图片文件列表返回"""
     old_list = os.listdir(directory)
-    # print old_list
+#    print(old_list)
     new_list = []
     for filename in old_list:
         name, fileformat = filename.split(".")
@@ -97,6 +97,7 @@ def handle_photo():
     '''
     src_dir, des_dir = "photos/", "min_photos/"
     file_list = list_img_file(src_dir)
+    # print(file_list)
     list_info = []
     for i in range(len(file_list)):
         filename = file_list[i]
@@ -127,7 +128,8 @@ def handle_photo():
             list_info[-1]['arr']['text'].append(info)
             list_info[-1]['arr']['type'].append('image')
     list_info.reverse()  # 翻转
-    bubble(list_info)
+    tmp = bubbleYear(list_info)
+    bubble(tmp)
     final_dict = {"list": list_info}
     with open("../../blog/blog_src/source/photos/data.json","w") as fp:
         json.dump(final_dict, fp)
@@ -173,6 +175,7 @@ def bubble(bubbleList):
     listLength = len(bubbleList)
     while listLength > 0:
         for i in range(listLength - 1):    # 这个循环负责设置冒泡排序进行的次数
+            print(bubbleList[i])
             for j in range(listLength-i-1):  # ｊ为列表下标
                 if(bubbleList[j].get('arr').get('year') == bubbleList[j+1].get('arr').get('year')):
                     if bubbleList[j].get('arr').get('month') < bubbleList[j+1].get('arr').get('month'):
@@ -189,6 +192,17 @@ def bubble(bubbleList):
         #             bubbleList[i] = bubbleList[i] - bubbleList[i+1]
         # listLength -= 1
     
+def bubbleYear(bubbleList):
+    listLength = len(bubbleList)
+    while listLength > 0:
+        for i in range(listLength - 1):
+            for j in range(listLength-i-1):
+                if bubbleList[j].get('arr').get('year') < bubbleList[j+1].get('arr').get('year'):
+                    
+                    bubbleList[j], bubbleList[j+1] = bubbleList[j+1], bubbleList[j]
+        print(bubbleList)
+        return bubbleList
+
 
 if __name__ == "__main__":
     cut_photo()        # 裁剪图片，裁剪成正方形，去中间部分
