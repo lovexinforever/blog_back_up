@@ -175,7 +175,7 @@ def bubble(bubbleList):
     listLength = len(bubbleList)
     while listLength > 0:
         for i in range(listLength - 1):    # 这个循环负责设置冒泡排序进行的次数
-            print(bubbleList[i])
+            # print(bubbleList[i])
             for j in range(listLength-i-1):  # ｊ为列表下标
                 if(bubbleList[j].get('arr').get('year') == bubbleList[j+1].get('arr').get('year')):
                     if bubbleList[j].get('arr').get('month') < bubbleList[j+1].get('arr').get('month'):
@@ -200,7 +200,7 @@ def bubbleYear(bubbleList):
                 if bubbleList[j].get('arr').get('year') < bubbleList[j+1].get('arr').get('year'):
                     
                     bubbleList[j], bubbleList[j+1] = bubbleList[j+1], bubbleList[j]
-        print(bubbleList)
+        # print(bubbleList)
         return bubbleList
 
 
