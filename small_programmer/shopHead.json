@@ -1,0 +1,14 @@
+{
+    "data":{
+        "shopHead": {
+        "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/small_programmer/logo.png",
+        "shopName": "黄焖鸡米饭黄焖排骨饭",
+        "shopStatus": "1",
+        "shopStatusDes": "营业中",
+        "people_consume": "900",
+        "send_consume_limit": "20",
+        "send_sevice_consume": "5",
+        "score" : 4
+        }
+    }
+}
