@@ -1,0 +1,42 @@
+{
+  "dashbroad": [{
+      "title": "昨日订单量",
+      "des": "昨天的所有交易订单数量",
+      "count": "43,321",
+      "compareLast": {
+        "up": true,
+        "count": "+234"
+      },
+      "compare7Day": {
+        "up": false,
+        "count": "-210"
+      }
+    },
+    {
+      "title": "昨日交易金额",
+      "des": "昨天的所有交易金额",
+      "count": "103,322,332",
+      "compareLast": {
+        "up": true,
+        "count": "+6523"
+      },
+      "compare7Day": {
+        "up": true,
+        "count": "+12377"
+      }
+    },
+    {
+      "title": "昨日注册用户",
+      "des": "昨天的所有的注册用户",
+      "count": "332",
+      "compareLast": {
+        "up": false,
+        "count": "-33"
+      },
+      "compare7Day": {
+        "up": false,
+        "count": "-44"
+      }
+    }
+  ]
+}
