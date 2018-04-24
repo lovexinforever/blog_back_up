@@ -26,8 +26,8 @@ def directory_exists(directory):
 
 def list_img_file(directory):
     """列出目录下所有文件，并筛选出图片文件列表返回"""
-    old_list = os.listdir(directory)
-#    print(old_list)
+    old_list = sorted(os.listdir(directory), reverse=True)
+    print(old_list)
     new_list = []
     for filename in old_list:
         name, fileformat = filename.split(".")
@@ -97,7 +97,7 @@ def handle_photo():
     '''
     src_dir, des_dir = "photos/", "min_photos/"
     file_list = list_img_file(src_dir)
-    # print(file_list)
+    print(file_list)
     list_info = []
     for i in range(len(file_list)):
         filename = file_list[i]
