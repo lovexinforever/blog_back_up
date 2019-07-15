@@ -1,6 +1,6 @@
 {
     "code": 200,
-     data:[
+     "data":[
         {
           "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-5-8_水墨和水.jpg",
           "isClass": true,
