@@ -1,0 +1,95 @@
+{
+    "code": 200,
+    "data": [
+        {
+          "isSerial": true,
+          "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-4-28_孤舟.jpg",
+          "className": "综合素质系列课",
+          "teacher": "师业有成  王老师",
+          "price": 1,
+          "originPrice": 999,
+          "count": 468
+        },
+        {
+          "isSerial": true,
+          "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-5-8_水墨和水.jpg",
+          "className": "综合素质系列课",
+          "teacher": "师业有成  王老师",
+          "price": 1,
+          "originPrice": 999,
+          "count": 4689
+        },
+        {
+          "isSerial": false,
+          "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-4-28_孤舟.jpg",
+          "className": "综合素质系列课",
+          "teacher": "师业有成  王老师",
+          "price": 1,
+          "originPrice": 999,
+          "count": 46
+        },
+        {
+          "isSerial": false,
+          "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-4-28_孤舟.jpg",
+          "className": "综合素质系列课",
+          "teacher": "师业有成  王老师",
+          "price": 1,
+          "originPrice": 999,
+          "count": 4
+        },
+        {
+          "isSerial": true,
+          "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-5-8_水墨和水.jpg",
+          "className": "综合素质系列课",
+          "teacher": "师业有成  王老师",
+          "price": 100,
+          "originPrice": 999,
+          "count": 477
+        },
+        {
+            "isSerial": true,
+            "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-4-28_孤舟.jpg",
+            "className": "综合素质系列课",
+            "teacher": "师业有成  王老师",
+            "price": 1,
+            "originPrice": 999,
+            "count": 468
+          },
+          {
+            "isSerial": true,
+            "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-5-8_水墨和水.jpg",
+            "className": "综合素质系列课",
+            "teacher": "师业有成  王老师",
+            "price": 1,
+            "originPrice": 999,
+            "count": 4689
+          },
+          {
+            "isSerial": false,
+            "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-4-28_孤舟.jpg",
+            "className": "综合素质系列课",
+            "teacher": "师业有成  王老师",
+            "price": 1,
+            "originPrice": 999,
+            "count": 46
+          },
+          {
+            "isSerial": false,
+            "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-4-28_孤舟.jpg",
+            "className": "综合素质系列课",
+            "teacher": "师业有成  王老师",
+            "price": 1,
+            "originPrice": 999,
+            "count": 4
+          },
+          {
+            "isSerial": true,
+            "imageUrl": "https://raw.githubusercontent.com/lovexinforever/blog_back_up/master/photos/2018-5-8_水墨和水.jpg",
+            "className": "综合素质系列课",
+            "teacher": "师业有成  王老师",
+            "price": 100,
+            "originPrice": 999,
+            "count": 477
+          }
+      ]
+    }
