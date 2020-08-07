@@ -168,6 +168,7 @@ def git_operation():
     '''
     os.system('git add --all')
     os.system('git commit -m "add photos"')
+    os.system('git fetch')
     os.system('git rebase origin/master')
     os.system('git push origin master')
 
